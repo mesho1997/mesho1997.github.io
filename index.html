@@ -3,46 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد عصام - الموقع الشخصي</title>
+    <title>مصادر منصة Lamix</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#home">الرئيسية</a>
-            <a href="#about">عنّي</a>
-            <a href="#projects">المشاريع</a>
-            <a href="#contact">اتصل بي</a>
+            <div class="logo">
+                <i class="fas fa-database"></i>
+                <span>Lamix Sources</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="#sources"><i class="fas fa-list"></i> المصادر</a>
+                <a href="#categories"><i class="fas fa-tags"></i> الفئات</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> التواصل</a>
+            </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <h1>مرحباً، أنا محمد عصام</h1>
-        <p>مطور ويب | مصمم | مبرمج</p>
-        <a href="#projects" class="btn">شاهد أعمالي</a>
+        <div class="hero-content">
+            <h1><i class="fas fa-code-branch"></i> مصادر منصة Lamix</h1>
+            <p>مجموعة شاملة من المصادر والبرمجيات المتاحة على منصة Lamix للتطوير والاستخدام</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="number">50+</span>
+                    <span class="label">مصدر متاح</span>
+                </div>
+                <div class="stat">
+                    <span class="number">15+</span>
+                    <span class="label">فئة مختلفة</span>
+                </div>
+                <div class="stat">
+                    <span class="number">100%</span>
+                    <span class="label">مجاني للاستخدام</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>عنّي</h2>
-        <p>أحب البرمجة وتطوير المواقع الإلكترونية. أتعلم باستمرار وأطور مهاراتي.</p>
+    <section id="sources" class="sources-section">
+        <div class="container">
+            <h2><i class="fas fa-box-open"></i> المصادر المتاحة</h2>
+            <p class="section-description">تصفح جميع المصادر المنظمة حسب الفئة مع معلومات تفصيلية عن كل مصدر</p>
+            
+            <!-- فلترة المصادر -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="social">التواصل الاجتماعي</button>
+                <button class="filter-btn" data-filter="tools">الأدوات</button>
+                <button class="filter-btn" data-filter="entertainment">الترفيه</button>
+                <button class="filter-btn" data-filter="productivity">الإنتاجية</button>
+            </div>
+
+            <!-- شبكة المصادر -->
+            <div class="sources-grid">
+                
+                <!-- Discord -->
+                <div class="source-card" data-category="social">
+                    <div class="source-header">
+                        <div class="source-icon discord">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Discord</h3>
+                            <span class="category-badge">التواصل الاجتماعي</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">منصة التواصل للمجتمعات والتطوير</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-link"></i> الرابط:</span>
+                                <span class="field-value">https://discord.gg/lamix</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-code"></i> الإصدار:</span>
+                                <span class="field-value">v2.5.1</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-calendar"></i> آخر تحديث:</span>
+                                <span class="field-value">2024-01-15</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-download"></i> التحميلات:</span>
+                                <span class="field-value">1,250</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-star"></i> التقييم:</span>
+                                <span class="field-value">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> chat</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> voice</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> community</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+                <!-- Tinder -->
+                <div class="source-card" data-category="social entertainment">
+                    <div class="source-header">
+                        <div class="source-icon tinder">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Tinder</h3>
+                            <span class="category-badge">التعارف</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">تطبيق التعارف والمواعدة الشهير</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-link"></i> الموقع الرسمي:</span>
+                                <span class="field-value">https://tinder.com</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-mobile-alt"></i> النظام:</span>
+                                <span class="field-value">Android / iOS</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-code-branch"></i> النسخة:</span>
+                                <span class="field-value">Mod v3.7</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-users"></i> المستخدمون النشطون:</span>
+                                <span class="field-value">75 مليون</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-globe"></i> التوفر:</span>
+                                <span class="field-value">عالمي</span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> dating</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> social</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> mobile</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+                <!-- Yandex -->
+                <div class="source-card" data-category="tools productivity">
+                    <div class="source-header">
+                        <div class="source-icon yandex">
+                            <i class="fab fa-yandex"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Yandex</h3>
+                            <span class="category-badge">أدوات بحث</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">محرك البحث الروسي ومجموعة أدواته</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-search"></i> نوع الخدمة:</span>
+                                <span class="field-value">محرك بحث + أدوات</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-map-marker-alt"></i> المنطقة:</span>
+                                <span class="field-value">روسيا والدول الناطقة بالروسية</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-language"></i> اللغات:</span>
+                                <span class="field-value">الروسية، الإنجليزية، التركية</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-tools"></i> الأدوات:</span>
+                                <span class="field-value">Yandex.Disk, Yandex.Maps, Yandex.Music</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-shield-alt"></i> الخصوصية:</span>
+                                <span class="field-value">مشفّر TLS/SSL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> search</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> russia</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> tools</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+                <!-- Telegram -->
+                <div class="source-card" data-category="social">
+                    <div class="source-header">
+                        <div class="source-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Telegram</h3>
+                            <span class="category-badge">المراسلة</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">منصة المراسلة السريعة والمشفرة</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-lock"></i> التشفير:</span>
+                                <span class="field-value">MTProto - End to End</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-file"></i> حجم الملفات:</span>
+                                <span class="field-value">حتى 2GB</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-users"></i> المجموعات:</span>
+                                <span class="field-value">حتى 200,000 عضو</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-robot"></i> البوتات:</span>
+                                <span class="field-value">نعم - API مفتوح</span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> secure</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> messaging</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> bots</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+                <!-- Netflix -->
+                <div class="source-card" data-category="entertainment">
+                    <div class="source-header">
+                        <div class="source-icon netflix">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Netflix</h3>
+                            <span class="category-badge">الترفيه</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">منصة البث التلفزيوني والمحتوى الأصلي</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-video"></i> المحتوى:</span>
+                                <span class="field-value">أفلام، مسلسلات، وثائقيات</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-globe-americas"></i> المناطق:</span>
+                                <span class="field-value">190 دولة</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-tags"></i> الباقات:</span>
+                                <span class="field-value">Basic، Standard، Premium</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-download"></i> التحميل:</span>
+                                <span class="field-value">متاح للتشغيل دون اتصال</span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> streaming</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> movies</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> subscription</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+                <!-- Spotify -->
+                <div class="source-card" data-category="entertainment">
+                    <div class="source-header">
+                        <div class="source-icon spotify">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="source-title">
+                            <h3>Spotify</h3>
+                            <span class="category-badge">الموسيقى</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-body">
+                        <p class="source-description">خدمة البث الموسيقي والبودكاست</p>
+                        
+                        <div class="source-fields">
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-music"></i> المكتبة:</span>
+                                <span class="field-value">70+ مليون أغنية</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-headphones"></i> الجودة:</span>
+                                <span class="field-value">حتى 320kbps</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-microphone"></i> البودكاست:</span>
+                                <span class="field-value">2.6 مليون بودكاست</span>
+                            </div>
+                            <div class="field">
+                                <span class="field-label"><i class="fas fa-dollar-sign"></i> السعر:</span>
+                                <span class="field-value">مجاني مع إعلانات / اشتراك</span>
+                            </div>
+                        </div>
+                        
+                        <div class="source-tags">
+                            <span class="tag"><i class="fas fa-hashtag"></i> music</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> streaming</span>
+                            <span class="tag"><i class="fas fa-hashtag"></i> audio</span>
+                        </div>
+                    </div>
+                    
+                    <div class="source-footer">
+                        <button class="btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        <button class="btn-download"><i class="fas fa-download"></i> تحميل</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>مشاريعي</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>الموقع الشخصي</h3>
-                <p>هذا الموقع الذي تقرأ منه الآن!</p>
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <h2><i class="fas fa-tags"></i> فئات المصادر</h2>
+            <div class="categories-grid">
+                <div class="category-card social">
+                    <i class="fas fa-users"></i>
+                    <h3>التواصل الاجتماعي</h3>
+                    <p>منصات التواصل والمراسلة</p>
+                    <span class="count">12 مصدر</span>
+                </div>
+                <div class="category-card tools">
+                    <i class="fas fa-tools"></i>
+                    <h3>الأدوات</h3>
+                    <p>أدوات البحث والخدمات</p>
+                    <span class="count">8 مصادر</span>
+                </div>
+                <div class="category-card entertainment">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>الترفيه</h3>
+                    <p>موسيقى، أفلام، ألعاب</p>
+                    <span class="count">15 مصدر</span>
+                </div>
+                <div class="category-card productivity">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>الإنتاجية</h3>
+                    <p>أدوات العمل والدراسة</p>
+                    <span class="count">10 مصادر</span>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-        <h2>اتصل بي</h2>
-        <div class="social-links">
-            <a href="https://github.com/mesho1997"><i class="fab fa-github"></i></a>
-            <a href="mailto:mesho1997@example.com"><i class="fas fa-envelope"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-database"></i> Lamix Sources</h3>
+                    <p>منصة تجميع المصادر والبرمجيات للتطوير والاستخدام</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <a href="#home">الرئيسية</a>
+                    <a href="#sources">المصادر</a>
+                    <a href="#categories">الفئات</a>
+                </div>
+                <div class="footer-section">
+                    <h4>التواصل</h4>
+                    <p><i class="fas fa-envelope"></i> support@lamix.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Lamix Sources. جميع الحقوق محفوظة.</p>
+            </div>
         </div>
     </footer>
 
